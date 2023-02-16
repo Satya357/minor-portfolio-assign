@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+header{
+	padding : 20px;
+}
+
+.navbar{
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+	gap : 25px;
+	letter-spacing: 1px;
+	font-size: 1.3rem;
+}
+
+li{
+	padding : 10px;
+}
+
+li:hover{
+	cursor: pointer;
+	background-color: white;
+	color : #111827;
+	border-radius: 10px; 
+}
+
+.navbar .active{
+	background-color: rgb(100, 100, 224);
+	padding : 5px 8px;
+	border-radius: 15px;
+}
+
+.active:hover{
+	color : #111827;
+}
+
+.intro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-left{
+	display: flex;
+	flex-direction: column;
+	width : 30%;
+}
+
+.intro-right{
+	width : 30%;
+}
+
+.intro-line-1{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap : 10px;
+}
+
+img[alt="waving-hand"]{
+	width : 10%;
+}
+
+img[alt="pc"]{
+	width : 100%;
+}
+
+.name{
+	font-size: 4rem;
+}
+
+.role{
+	font-size: 2rem;
+	color : rgb(197, 197, 89);
+}
+
+h3{
+	font-size: 2rem;
+}
+
+.project-heading{
+	font-size: 3rem;
+	margin-top: 70px;
+}
+
+.projects{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-heading{
+	margin : 70px auto;;
+	padding : 5px;
+	border-bottom : 3px solid yellow;
+}
+
+.projects-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap : 20px;
+	width : 60%;
+}
+
+img[alt="hamburger"]{
+	display: none;
+}
+
+img[alt="project-image"]{
+	width : 45%;
+}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width : 20%;
+	margin : 100px auto 50px;
+}
+
+.social-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap : 30px;
+}
+
+li{
+	list-style-type: none;
+	text-align: center;
+}
+
+.contact{
+	font-size: 3rem;
+	margin-bottom : 50px;
+	border-bottom: 3px solid yellow;
+}
+
+img[alt="social-link"]{
+	width : 50px;
+}
+
+a{
+	cursor : pointer;
+}
+
+@media screen and (max-width : 900px){
+	img[alt="project-image"]{
+		width : 100%;
+	}
+
+	.intro{
+		flex-direction: column;
+		row-gap: 70px;
+	}
+
+	.name , .role{
+		text-align: center;
+		font-size: 2rem;
+		margin : 10px 0;
+	}
+
+	.intro-right{
+		width : 70%;
+	}
+
+	img[alt="waving-hand"]{
+		width : 40px;
+	}
+
+	.navbar{
+		display: none;
+	}
+
+	img[alt="hamburger"]{
+		display: block;
+		width : 10%;
+	}
+
+	img[alt="social-link"]{
+		width : 30px;
+	}
+
+}
+
+
+
+
